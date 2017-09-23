@@ -73,9 +73,10 @@
 
 // general sous banner
 .general-wrapper{
+  color: #FFFCE0;
   page-break-after: always ;
   display: flex;
-  margin: 2.5%;
+  padding: 2.5%;
   font-size:18px;
   justify-content: space-between;
   @media(max-width: 420px) {
