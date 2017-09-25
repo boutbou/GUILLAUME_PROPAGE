@@ -23,6 +23,10 @@
   border-radius: 6px;
 }
 
+.general-wrapper .btn-medium {
+  position: absolute;
+  bottom: 5%;
+}
 .btn-medium:hover {
   background-color: $yellow;
   color: #5F500D;
