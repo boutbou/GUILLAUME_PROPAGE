@@ -75,24 +75,34 @@
 .general-wrapper{
   color: #FFFCE0;
   page-break-after: always ;
-  display: flex;
-  padding: 2.5%;
   font-size:18px;
-  justify-content: space-between;
+  // justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
   @media(max-width: 420px) {
     font-size:12px;
   }
 }
 // general content
 .general-content {
+  display: flex;
+  padding: 2.5%;
 
 }
 
-.wrapper-content{
-
+.text{
+  padding: 1.5%;
 }
 
 // image side
 .side-image {
   flex: 0 0 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .img {
+    width: 100%;
+    height: auto;
+  }
 }
