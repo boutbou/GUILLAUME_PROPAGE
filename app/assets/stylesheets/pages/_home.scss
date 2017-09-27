@@ -71,7 +71,7 @@
   }
 }
 
-// general sous banner
+// generaux sous banner
 .general-wrapper{
   color: #FFFCE0;
   page-break-after: always ;
@@ -86,8 +86,9 @@
 }
 // general content
 .general-content {
-  display: flex;
+  // display: flex;
   padding: 2.5%;
+  background-color: rgba(66,75,84,0.8);
 
 }
 
@@ -97,12 +98,16 @@
 
 // image side
 .side-image {
-  flex: 0 0 35%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  .img {
-    width: 100%;
-    height: auto;
-  }
+  // justify-content: space-around;
+  // flex: 1 0 35%;
+  // opacity: 0.9 !important;
+  // .img {
+  //   width: 50%;
+  //   height: auto;
+  // }
+}
+.carousel-inner img{
+  width:100%;
 }
