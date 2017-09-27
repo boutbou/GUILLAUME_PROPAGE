@@ -1,17 +1,31 @@
+@media (min-width: 1200px) {
+  // .container {
+  //   width: 100vw;
+  // }
+}
+
 // Specific CSS for your home-page
-.main-container{
+.container{
   display: flex;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .home-background {
 }
 
 // sidebar voir scss partiel
 .sidebar {
-  position: sticky !important;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  z-index: 1030;
   width: 60px;
-  height: 100vh;
-  top: 0 !important;
-  @media(max-width: 420px) {
+  height: 100%;
+  top: 0;
+  left:0;
+  @media(max-width: 575px) {
     width: 40px;
   }
 }
@@ -21,8 +35,10 @@
 
 // content
 
-.general-container {
-
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: calc(100vw-60px);
 }
 
 // Banner
@@ -44,7 +60,7 @@
   font-size: 55px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  @media(max-width: 420px) {
+  @media(max-width: 575px) {
     font-size: 20px;
   }
 }
@@ -55,7 +71,7 @@
   font-size: 60px;
   font-weight: lighter;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  @media(max-width: 420px) {
+  @media(max-width: 575px) {
     font-size: 25px;
   }
 }
@@ -66,7 +82,7 @@
   color: rgb(255, 255, 255);
   opacity: 0.6;
   margin-bottom: 30px;
-  @media(max-width: 420px) {
+  @media(max-width: 575px) {
     font-size: 15px;
   }
 }
@@ -80,7 +96,7 @@
   align-items: center;
   flex-direction: column;
   display: flex;
-  @media(max-width: 420px) {
+  @media(max-width: 575px) {
     font-size:12px;
   }
 }

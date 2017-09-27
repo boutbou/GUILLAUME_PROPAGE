@@ -7,11 +7,11 @@
   position: relative;
   display: table-cell;
   width: 60px;
-  height: 36px;
+  height: 55px;
   text-align: center;
   vertical-align: middle;
   font-size:20px;
-  @media(max-width: 420px) {
+  @media(max-width: 575px) {
     width: 40px;
     font-size:14px;
   }
@@ -27,10 +27,15 @@
   border-right:1px solid #e5e5e5;
   height: 100vh;
   overflow:hidden;
-  -webkit-transition:width .05s linear;
+  -webkit-transition:width .5s linear;
   transition:width .05s linear;
   -webkit-transform:translateZ(0) scale(1,1);
-  z-index:1000;
+  z-index: 1030;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
 }
 
 .main-menu>ul {
@@ -41,7 +46,7 @@
   position:relative;
   display:block;
   width:250px;
-  @media(max-width: 420px) {
+  @media(max-width: 575px) {
     width: 150px;
   }
 }
@@ -58,7 +63,7 @@
   -webkit-transform:translateZ(0) scale(1,1);
   -webkit-transition:all .1s linear;
   transition:all .1s linear;
-  @media(max-width: 420px) {
+  @media(max-width: 575px) {
     font-size:10px;
   }
 }
@@ -71,7 +76,7 @@
   text-align:center;
   vertical-align:middle;
   font-size:18px;
-  @media(max-width: 420px) {
+  @media(max-width: 575px) {
     width: 40px;
     font-size:12px;
   }
@@ -83,7 +88,7 @@
   vertical-align:middle;
   width:190px;
   font-family: 'Titillium Web', sans-serif;
-  @media(max-width: 420px) {
+  @media(max-width: 575px) {
     width: 110px;
   }
 }
