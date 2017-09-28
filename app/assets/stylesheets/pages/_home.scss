@@ -5,7 +5,7 @@
 }
 
 // Specific CSS for your home-page
-.container{
+.containe{
   display: flex;
   padding-left: 0px;
   padding-right: 0px;
@@ -35,15 +35,15 @@
 
 // content
 
-.container-fluid {
+.container-flui {
   padding-left: 0px;
   padding-right: 0px;
-  width: calc(100vw-60px);
+  width: calc(100vw - 40px);
 }
 
 // Banner
 .banner {
-  color: white;
+  color: $light-blue;
   text-align: center;
   height: 100vh;
   background-size: cover !important;
@@ -79,7 +79,7 @@
 .banner p {
   font-size: 25px;
   font-weight: lighter;
-  color: rgb(255, 255, 255);
+  color: $light-gray;
   opacity: 0.6;
   margin-bottom: 30px;
   @media(max-width: 575px) {
@@ -89,7 +89,7 @@
 
 // generaux sous banner
 .general-wrapper{
-  color: #FFFCE0;
+  color: $blue;
   page-break-after: always ;
   font-size:18px;
   // justify-content: space-between;
@@ -103,8 +103,9 @@
 // general content
 .general-content {
   // display: flex;
+  color: $light-blue;
   padding: 2.5%;
-  background-color: rgba(66,75,84,0.8);
+  background-color: rgba(157, 180, 192,0.4);
 
 }
 
