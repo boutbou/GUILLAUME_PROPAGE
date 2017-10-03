@@ -25,9 +25,6 @@
   height: 100%;
   top: 0;
   left:0;
-  @media(max-width: 575px) {
-    width: 40px;
-  }
 }
 .sidebar:hover {
  width:250px;
@@ -38,7 +35,7 @@
 .container-flui {
   padding-left: 0px;
   padding-right: 0px;
-  width: calc(100vw - 40px);
+  width: calc(100vw - 60px);
 }
 
 // Banner
@@ -60,6 +57,9 @@
   font-size: 55px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  @media(max-width: 992px) {
+    font-size: 45px;
+  }
   @media(max-width: 575px) {
     font-size: 20px;
   }
@@ -127,4 +127,25 @@
 }
 .carousel-inner img{
   width:100%;
+}
+
+
+// responsive
+// desactivation sidebar on mobile
+
+@media (max-width: 575px) {
+  .sidebar {
+    display: none;
+  }
+  .container-flui {
+    width: 100vw;
+  }
+  .fa {
+    height: auto;
+  }
+}
+@media (min-width: 577px) {
+  .navbar {
+    display: none;
+  }
 }
