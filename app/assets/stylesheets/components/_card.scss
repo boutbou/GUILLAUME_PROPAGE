@@ -1,0 +1,47 @@
+.card {
+  font-family: $body-font;
+  height: 250px;
+  width: 450px;
+  color: $light-gray;
+  position: relative;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid $dark-gray;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 65px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  font-weight: bold;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: $name-font;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  line-height: 4.5px;
+}
+.card-description h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-description p {
+  font-size: 14px;
+}
+
+.card-user h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-user p {
+  font-size: 14px;
+}

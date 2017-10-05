@@ -104,21 +104,26 @@
 // general content
 .general-content {
   // display: flex;
-  color: $light-blue;
-  padding: 2.5%;
-  background-color: rgba(157, 180, 192,0.4);
+  color: $dark-gray;
+  padding: 1.5%;
+  background-color: rgba(157, 180, 192,0.3);
+  p {
+    font-size: 12px;
+  }
 
 }
 
 .text{
-  padding: 1.5%;
+  padding: 1%;
 }
+
 
 // image side
 .side-image {
   display: flex;
   align-items: center;
-  // justify-content: space-around;
+  justify-content: space-around;
+  margin: 5px;
   // flex: 1 0 35%;
   // opacity: 0.9 !important;
   // .img {
@@ -129,7 +134,19 @@
 .carousel-inner img{
   width:100%;
 }
+.btn-bas {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 90px;
+}
 
+.parcours h4 {
+    font-family: $name-font
+}
+.parcours h3 {
+    font-family: $name-font
+}
 
 // responsive
 // desactivation sidebar on mobile
@@ -144,9 +161,24 @@
   .fa {
     height: auto;
   }
+  .first-text {
+    margin-top: 55px;
+  }
+  .text-left p {
+    font-size: 10px;
+  }
 }
 @media (min-width: 993px) {
   .navbar {
     display: none;
+  }
+  .first-image {
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: 767px) {
+  .first-image {
+    margin-top: 55px;
   }
 }
