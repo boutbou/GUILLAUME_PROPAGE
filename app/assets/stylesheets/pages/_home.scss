@@ -1,19 +1,30 @@
+@media (min-width: 1200px) {
+  // .container {
+  //   width: 100vw;
+  // }
+}
+
 // Specific CSS for your home-page
-.main-container{
+.containe{
   display: flex;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .home-background {
 }
 
 // sidebar voir scss partiel
 .sidebar {
-  position: sticky !important;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  z-index: 1030;
   width: 60px;
-  height: 100vh;
-  top: 0 !important;
-  @media(max-width: 420px) {
-    width: 40px;
-  }
+  height: 100%;
+  top: 0;
+  left:0;
 }
 .sidebar:hover {
  width:250px;
@@ -21,13 +32,15 @@
 
 // content
 
-.general-container {
-
+.container-flui {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: calc(100vw - 60px);
 }
 
 // Banner
 .banner {
-  color: white;
+  color: $light-blue;
   text-align: center;
   height: 100vh;
   background-size: cover !important;
@@ -40,11 +53,15 @@
   }
 }
 .banner h1 {
-  font-family: $banner-font ;
+  padding: 15px;
+  font-family: $banner-font;
   font-size: 55px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  @media(max-width: 420px) {
+  @media(max-width: 992px) {
+    font-size: 45px;
+  }
+  @media(max-width: 575px) {
     font-size: 20px;
   }
 }
@@ -55,7 +72,7 @@
   font-size: 60px;
   font-weight: lighter;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  @media(max-width: 420px) {
+  @media(max-width: 992px) {
     font-size: 25px;
   }
 }
@@ -63,44 +80,50 @@
 .banner p {
   font-size: 25px;
   font-weight: lighter;
-  color: rgb(255, 255, 255);
+  color: $light-gray;
   opacity: 0.6;
   margin-bottom: 30px;
-  @media(max-width: 420px) {
+  @media(max-width: 992px) {
     font-size: 15px;
   }
 }
 
 // generaux sous banner
 .general-wrapper{
-  color: #FFFCE0;
+  color: $blue;
   page-break-after: always ;
   font-size:18px;
   // justify-content: space-between;
   align-items: center;
   flex-direction: column;
   display: flex;
-  @media(max-width: 420px) {
+  @media(max-width: 992px) {
     font-size:12px;
   }
 }
 // general content
 .general-content {
   // display: flex;
-  padding: 2.5%;
-  background-color: rgba(66,75,84,0.8);
+  color: $dark-gray;
+  padding: 1.5%;
+  background-color: rgba(157, 180, 192,0.3);
+  p {
+    font-size: 12px;
+  }
 
 }
 
 .text{
-  padding: 1.5%;
+  padding: 1%;
 }
+
 
 // image side
 .side-image {
   display: flex;
   align-items: center;
-  // justify-content: space-around;
+  justify-content: space-around;
+  margin: 5px;
   // flex: 1 0 35%;
   // opacity: 0.9 !important;
   // .img {
@@ -110,4 +133,52 @@
 }
 .carousel-inner img{
   width:100%;
+}
+.btn-bas {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 90px;
+}
+
+.parcours h4 {
+    font-family: $name-font
+}
+.parcours h3 {
+    font-family: $name-font
+}
+
+// responsive
+// desactivation sidebar on mobile
+
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+  .container-flui {
+    width: 100vw;
+  }
+  .fa {
+    height: auto;
+  }
+  .first-text {
+    margin-top: 55px;
+  }
+  .text-left p {
+    font-size: 10px;
+  }
+}
+@media (min-width: 993px) {
+  .navbar {
+    display: none;
+  }
+  .first-image {
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: 767px) {
+  .first-image {
+    margin-top: 55px;
+  }
 }

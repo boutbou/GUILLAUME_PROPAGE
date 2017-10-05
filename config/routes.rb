@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'pages/rdv'
+
+  get 'pages/soins'
+
   get 'pages/home'
 
   root to: 'pages#home'
