@@ -13,6 +13,23 @@
 .home-background {
 }
 
+.style1 {
+  border-radius: 5px;
+  border: 1px solid $dark-gray;
+  background-color: rgba(232, 238, 242, 0.5);
+  color: $dark-gray;
+  padding: 10px;
+  margin: 5px;
+}
+.style2 {
+  border-radius: 5px;
+  border: 1px solid $light-gray;
+  background-color: rgba(37, 50, 55, 0.5);
+  color: $light-blue;
+  padding: 10px;
+  margin: 5px;
+}
+
 // sidebar voir scss partiel
 .sidebar {
   position: -webkit-sticky;
@@ -106,7 +123,7 @@
   // display: flex;
   color: $dark-gray;
   padding: 1.5%;
-  background-color: rgba(157, 180, 192,0.3);
+  // background-color: rgba(157, 180, 192,0.3);
   p {
     font-size: 12px;
   }
@@ -142,7 +159,9 @@
 }
 
 .parcours h4 {
-    font-family: $name-font
+    font-family: $name-font;
+    font-weight: bold;
+    font-size: 35px;
 }
 .parcours h3 {
     font-family: $name-font

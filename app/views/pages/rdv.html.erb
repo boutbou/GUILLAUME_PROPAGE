@@ -1,88 +1,97 @@
-<div class="parcours rendezvous">
-  <div class="text-center">
-    <h3>Prise de rendez vous</h3>
+<%= render "shared/mobile-navbar"%>
+<div class="containe">
+  <div class="sidebar">
+    <%= render "shared/sidebar"%>
   </div>
-  <form>
-    <h3>Pour prendre rendez-vous merci de remplir le formulaire</h3>
+  <div class="container-flui home-background" >
+    <div class="parcours rendezvous">
 
-    <div class="contentform">
-      <div id="sendmessage"> Votre demande a bien été prise en compte, nous vous contacterons afin de confirmer la prise de rendez vous. Merci.</div>
-
-
-      <div class="leftcontact">
-        <div class="form-group">
-          <p>Nom<span>*</span></p>
-          <span class="icon-case"><i class="fa fa-male"></i></span>
-          <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
-
-        <div class="form-group">
-          <p>Prénom <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-user"></i></span>
-          <input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
-
-        <div class="form-group">
-          <p>E-mail <span></span></p>
-          <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-          <input type="email" name="email" id="email"/>
-        </div>
-
-        <div class="form-group">
-          <p>Etes vous deja venu chez nous ? <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-question"></i></span>
-          <input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
-
+      <div class="text-center">
+        <h3>Prise de rendez vous</h3>
       </div>
+      <form>
+        <h3>Pour prendre rendez-vous merci de remplir le formulaire</h3>
 
-      <div class="rightcontact">
+        <div class="contentform">
+          <div id="sendmessage"> Votre demande a bien été prise en compte, nous vous contacterons afin de confirmer la prise de rendez vous. Merci.</div>
 
-        <div class="form-group">
-          <p>Numéro de téléphone <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-phone"></i></span>
-          <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
-          <div class="validation"></div>
-        </div>
 
-        <div class="form-group">
-          <p>Type de rendez-vous Pedicurie/Bilan/remise de semelle<span>*</span></p>
-          <span class="icon-case"><i class="fa fa-random"></i></span>
-          <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
-
-        <div class="form-group">
-          <p>Date souhaitée <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-calendar"></i></span>
-          <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
-
-        <div class="form-group">
-          <p>Horaire souhaité <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-clock-o"></i></span>
-          <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <p>Message <span>*</span></p>
-        <span class="icon-case"><i class="fa fa-comments-o"></i></span>
-        <textarea name="message" rows="14" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Message' doit être renseigné."></textarea>
-        <div class="validation"></div>
-      </div>
-    </div>
-
-    <button type="submit" class="bouton-contact">Send</button>
-
-  </form>
-  <div class="btn-bas">
-              <a class="btn-medium" href=".."> Retour à l'accueil </a>
+          <div class="leftcontact">
+            <div class="form-group">
+              <p>Nom<span>*</span></p>
+              <span class="icon-case"><i class="fa fa-male"></i></span>
+              <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
+              <div class="validation"></div>
             </div>
 
+            <div class="form-group">
+              <p>Prénom <span>*</span></p>
+              <span class="icon-case"><i class="fa fa-user"></i></span>
+              <input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
+              <div class="validation"></div>
+            </div>
+
+            <div class="form-group">
+              <p>E-mail <span></span></p>
+              <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+              <input type="email" name="email" id="email"/>
+            </div>
+
+            <div class="form-group">
+              <p>Etes vous deja venu chez nous ? <span>*</span></p>
+              <span class="icon-case"><i class="fa fa-question"></i></span>
+              <input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
+              <div class="validation"></div>
+            </div>
+
+          </div>
+
+          <div class="rightcontact">
+
+            <div class="form-group">
+              <p>Numéro de téléphone <span>*</span></p>
+              <span class="icon-case"><i class="fa fa-phone"></i></span>
+              <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
+              <div class="validation"></div>
+            </div>
+
+            <div class="form-group">
+              <p>Type de rendez-vous Pedicurie/Bilan/remise de semelle<span>*</span></p>
+              <span class="icon-case"><i class="fa fa-random"></i></span>
+              <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
+              <div class="validation"></div>
+            </div>
+
+            <div class="form-group">
+              <p>Date souhaitée <span>*</span></p>
+              <span class="icon-case"><i class="fa fa-calendar"></i></span>
+              <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
+              <div class="validation"></div>
+            </div>
+
+            <div class="form-group">
+              <p>Horaire souhaité <span>*</span></p>
+              <span class="icon-case"><i class="fa fa-clock-o"></i></span>
+              <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
+              <div class="validation"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <p>Message <span>*</span></p>
+            <span class="icon-case"><i class="fa fa-comments-o"></i></span>
+            <textarea name="message" rows="14" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Message' doit être renseigné."></textarea>
+            <div class="validation"></div>
+          </div>
+        </div>
+
+        <button type="submit" class="bouton-contact">Send</button>
+
+      </form>
+      <div class="btn-bas">
+        <a class="btn-medium" href=".."> Retour à l'accueil </a>
+      </div>
+
+    </div>
+  </div>
 </div>

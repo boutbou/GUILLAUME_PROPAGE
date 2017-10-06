@@ -1,7 +1,7 @@
 .card {
   font-family: $body-font;
-  height: 250px;
-  width: 450px;
+  height: 200px;
+  width: 275px;
   color: $light-gray;
   position: relative;
   margin: 10px;
@@ -12,36 +12,40 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  width: 65px;
+  width: 50px;
   border-radius: 50%;
 }
 .card-category {
   position: absolute;
   font-weight: bold;
-  top: 10px;
   left: 10px;
-  font-size: 22px;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: $name-font;
 }
 .card-description {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 10px;
-  line-height: 4.5px;
+  line-height: 4px;
 }
 .card-description h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
+
+.card-description h4 {
+  font-size: 16px !important;
+  font-family: $body-font !important;
+}
 .card-description p {
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .card-user h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 .card-user p {
-  font-size: 14px;
+  font-size: 11px;
 }
