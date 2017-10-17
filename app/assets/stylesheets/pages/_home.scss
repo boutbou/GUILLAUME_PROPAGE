@@ -126,6 +126,7 @@
 }
 // generaux
 .general-wrapper{
+  height: 100%;
   color: $blue;
   page-break-after: always ;
   font-size:14px;
@@ -137,12 +138,19 @@
     font-size:12px;
   }
 }
+// special homepage
+.general-wrapper#adeline {
+  height: unset;
+}
+
 // general content
 .general-content {
-  // display: flex;
   color: $dark-gray;
-  padding: 1.5%;
-  // background-color: rgba(157, 180, 192,0.3);
+  padding: 10px;
+  font-family: $body-font;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.05);
+  border-radius: 8px;
+  background-color: rgba(232,238,242,0.2);
   p {
     font-size: 13px;
   }
@@ -160,7 +168,7 @@
   align-items: center;
   justify-content: space-around;
   margin: 5px;
- border-radius: 5px;
+  border-radius: 5px;
 }
 .carousel-inner img{
   width:100%;
@@ -169,16 +177,16 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 90px;
+  padding-top: 30px;
 }
 
 .parcours h4 {
-    font-family: $name-font;
-    font-weight: bold;
-    font-size: 35px;
+  font-family: $name-font;
+  font-weight: bold;
+  font-size: 35px;
 }
 .parcours h3 {
-    font-family: $name-font
+  font-family: $name-font
 }
 
 // responsive
