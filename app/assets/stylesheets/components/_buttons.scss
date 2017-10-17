@@ -11,12 +11,10 @@
   }
 }
 
-
-
 .general-wrapper .btn-medium {
-  position: absolute;
-  bottom: 5%;
+  margin-bottom: 10px;
 }
+
 .btn-medium:hover {
   background-color: $yellow;
   color: $dark-gray;

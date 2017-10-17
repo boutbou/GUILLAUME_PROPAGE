@@ -1,3 +1,9 @@
+// forcage suppression margin row
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 @media (min-width: 1200px) {
   // .container {
   //   width: 100vw;
@@ -14,9 +20,9 @@
 }
 
 .style1 {
-  border-radius: 5px;
-  border: 1px solid $dark-gray;
-  background-color: rgba(232, 238, 242, 0.5);
+  // border-radius: 5px;
+  // border: 1px solid $dark-gray;
+  // background-color: rgba(232, 238, 242, 0.5);
   color: $dark-gray;
   padding: 10px;
   margin: 5px;
@@ -105,11 +111,24 @@
   }
 }
 
-// generaux sous banner
+// sous banner
+.underbanner {
+  color: $oldlight-blue;
+  background-color: $dark-gray;
+  text-align:center;
+  text-align: justify;
+  padding:5% 12%;
+  font-size: 14px;
+  span {
+    font-family: $name-font;
+    font-size:25px
+  }
+}
+// generaux
 .general-wrapper{
   color: $blue;
   page-break-after: always ;
-  font-size:18px;
+  font-size:14px;
   // justify-content: space-between;
   align-items: center;
   flex-direction: column;
@@ -125,7 +144,7 @@
   padding: 1.5%;
   // background-color: rgba(157, 180, 192,0.3);
   p {
-    font-size: 12px;
+    font-size: 13px;
   }
 
 }
@@ -141,12 +160,7 @@
   align-items: center;
   justify-content: space-around;
   margin: 5px;
-  // flex: 1 0 35%;
-  // opacity: 0.9 !important;
-  // .img {
-  //   width: 50%;
-  //   height: auto;
-  // }
+ border-radius: 5px;
 }
 .carousel-inner img{
   width:100%;
