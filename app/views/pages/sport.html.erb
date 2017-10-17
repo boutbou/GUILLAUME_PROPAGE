@@ -1,0 +1,113 @@
+<%= render "shared/mobile-navbar"%>
+
+<div class="containe">
+
+  <div class="sidebar">
+    <%= render "shared/sidebar"%>
+  </div>
+
+  <div class="container-flui home-background" >
+
+    <div class="general-wrapper" id="sport">
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-2 col-sm-6 ">
+          <div class="general-content">
+            <div class="row">
+              <div class="col-xs-12 col-sm-8">
+                <div class="parcours text-left style1">
+                  <h3>La podologie du sport</h3>
+                  <p><span style="line-height: 18px; text-align: justify;">Une activité de marche sportive en montagne est une activité spécifique. Elle se prépare car le pied va subir des frictions, des agressions inhabituelles entrainant échauffements plantaires, hématomes, sensations de brûlures, ampoules, engelures, crevasses, fissures.... La peau est un vêtement souple, élastique, qui s'entretient, qui se prépare et qui se répare.&nbsp;</span></p>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="first-image side-image">
+                <%= cl_image_tag "pexels-photo-356053_wxols2.jpg", :border=>"2px_solid_rgb:9DB4C0", width: 250, height: 150, crop: :fill %>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              <div class="text-left style1">
+
+                <h3><span>Une bonne prévention passe par du bon matériel :</span></h3>
+                <p><span style="text-decoration: underline;">De bonnes chaussures</span> : plusieurs paires sont parfois nécessaires. Il faut veiller à adapter la bonne pointure. Attention au pied droit et gauche qui n'ont pas systématiquement la même pointure.</p>
+                <p><span style="text-decoration: underline;">De bonnes chaussettes</span>.</p>
+                <p><span style="text-decoration: underline;">Une bonne préparation de la peau et des ongles</span> : la peau va être vérifiée au moins une semaine avant le raid selon le niveau de marche demandée et massée avec des crèmes spéciales anti-frottement anti-transpirante. Les ongles seront coupés au carré 1 mm en avant de la pulpe de l'orteil. Si les ongles sont douloureux, il est recommandé de faire des soins chez un podologue avant le départ. En effet, les ongles vont subir des contraintes qui peuvent faire apparaître des hématomes rendant la marche impossible à cause du liquide collectionné sous la plaquette de l'ongle. Les espaces interdigitaux seront vérifiés (fissures).</p>
+                <p>Le matin du départ : séchage des pieds impeccable.</p>
+                <p>Les produits d'entretien de la peau doivent être emportés sur la course pour être appliqués régulièrement. &nbsp;En effet, il est possible d'en passer plusieurs fois dans la journée en cas d'échauffement ou d'ampoules en début de formation. Lors des passages en tout terrain (passage rivière), une ampoule peut survenir si le pied n'est pas suffisamment préparé par ces produits spécifiques.&nbsp;</p>
+                <p>La sollicitation du tout-terrain pour le pied est la meilleure garantie d'un bon équilibre en montagne si les trois composants <strong>chaussage, entretien et prévention</strong> sont respectés.</p>
+                <p style="text-align: center;"><strong>"J'ai mal aux pieds : je consulte un podologue"<br>Demandez conseil à votre podologue !</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <div class="side-image">
+                <div class='container-fluid'>
+                  <div id="my-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#my-carousel" data-slide-to="1"></li>
+                      <li data-target="#my-carousel" data-slide-to="2"></li>
+                      <li data-target="#my-carousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <%= cl_image_tag("running-shoe-shoe-brooks-highly-functional-54334_mbqbaf", width: 250, height: 150, crop: :fill) %>
+                        <div class="carousel-caption"></div>
+                      </div>
+                      <div class="item">
+                        <%= cl_image_tag("shoes-leather-single-fashion_wi93xu", width: 250, height: 150, crop: :fill) %>
+                        <div class="carousel-caption"></div>
+                      </div>
+                      <div class="item">
+                        <%= cl_image_tag("pexels-photo-221207_hbuwx7", width: 250, height: 150, crop: :fill) %>
+                        <div class="carousel-caption"></div>
+                      </div>
+                      <div class="item">
+                        <%= cl_image_tag("women-s-shoes-red-pin-fashion-66856_zp9l67", width: 250, height: 150, crop: :fill) %>
+                        <div class="carousel-caption"></div>
+                      </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Précédent</span>
+                    </a>
+                    <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Suivant</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-2">
+        <%= render "shared/sideinfos"%>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <%= render "shared/footer"%>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+</div>
+

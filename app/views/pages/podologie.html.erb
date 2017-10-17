@@ -1,0 +1,113 @@
+<%= render "shared/mobile-navbar"%>
+
+<div class="containe">
+
+  <div class="sidebar">
+    <%= render "shared/sidebar"%>
+  </div>
+
+  <div class="container-flui home-background" >
+
+    <div class="general-wrapper" id="podologie">
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-2 col-sm-6 ">
+          <div class="general-content">
+            <div class="row">
+              <div class="col-xs-12 col-sm-8">
+                <div class="parcours text-left style1">
+                  <h3>La pratique de la podologie</h3>
+
+                  <p>Le <strong>pédicure-podologue</strong> est un professionnel de santé diplômé d'état, inscrit au code de la santé publique dont l'exercice réglementé s'appuie sur un code de déontologie appliqué sous l'égide d'un ordre professionnel.</p>
+                  <p>Il est le professionnel paramédical spécialiste de la santé du pied</p>
+                  <p>Le pédicure-podologue est consulté en première intention. Il intervient sur les troubles cutanés, morpho-dynamiques du pied et des affections unguéales du pied en tenant compte des interactions avec l'appareil locomoteur.</p>
+                  <p>Le pédicure-podologue prend en charge <a title="pathologies" href="../pages/soins">les problèmes podaux ou unguéaux </a> tels que les verrues, les onychomycoses, les hyperkératoses, les phlyctènes, ongles incarnés, mycoses ainsi que les dysfonctionnements de statique et de difficultés à la marche... par des soins appropriés réalisés en cabinet, en milieu hospitalier, en centre de santé, en maisons pluridisciplinaires ou à domicile.</p>
+
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="first-image side-image">
+                  <%= cl_image_tag "pexels-photo-356053_wxols2.jpg", :border=>"2px_solid_rgb:9DB4C0", width: 250, height: 150, crop: :fill %>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="text-left style1">
+                  <p>Il intervient à tout âge, de l'enfant à la personne âgée, sans oublier les <a title="Sportif" href="../pages/sport">sportifs</a>, les patients atteints de maladies chroniques diabète, polyarthrite rhumatoïde, syndromes inflammatoires, ...). Il réalise un examen clinique approfondi et définit avec le patient un plan thérapeutique qui peut comprendre des <strong>soins podologiques</strong> complétés si nécessaire de la prescription et de la réalisation de dispositifs médicaux tels que <a title="orthoplasties" href="../pages/orthoplastie">l'orthonyxie, l'onychoplastie, l'orthoplastie</a>, l'orthèse plantaire pour corriger les troubles de la marche et du chaussage. Il prescrit également des topiques (médicaments non listés).</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <div class="side-image">
+                  <div class='container-fluid'>
+                    <div id="my-carousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#my-carousel" data-slide-to="1"></li>
+                        <li data-target="#my-carousel" data-slide-to="2"></li>
+                        <li data-target="#my-carousel" data-slide-to="3"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <%= cl_image_tag("running-shoe-shoe-brooks-highly-functional-54334_mbqbaf", width: 250, height: 150, crop: :fill) %>
+                          <div class="carousel-caption"></div>
+                        </div>
+                        <div class="item">
+                          <%= cl_image_tag("shoes-leather-single-fashion_wi93xu", width: 250, height: 150, crop: :fill) %>
+                          <div class="carousel-caption"></div>
+                        </div>
+                        <div class="item">
+                          <%= cl_image_tag("pexels-photo-221207_hbuwx7", width: 250, height: 150, crop: :fill) %>
+                          <div class="carousel-caption"></div>
+                        </div>
+                        <div class="item">
+                          <%= cl_image_tag("women-s-shoes-red-pin-fashion-66856_zp9l67", width: 250, height: 150, crop: :fill) %>
+                          <div class="carousel-caption"></div>
+                        </div>
+                      </div>
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Précédent</span>
+                      </a>
+                      <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-8">
+                <div class="parcours first-text text-right style1">
+                  <p>Le pédicure-podologue a un rôle important en matière de prévention, de conseils pour le chaussage, l'hygiène des pieds et l'éducation à la santé.</p>
+                  <p>Le rôle des pédicures-podologues est essentiel pour traiter la douleur. Il contribue au maintien de l'autonomie, au maintien à domicile et à la prévention des chutes.</p>
+                  <h3>Adoptez le réflexe : "<strong>j'ai mal au pied, je consulte un podologue</strong>".</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-2">
+          <%= render "shared/sideinfos"%>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <%= render "shared/footer"%>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</div>
+

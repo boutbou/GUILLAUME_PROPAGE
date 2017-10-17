@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
-  get 'pages/rdv'
+  get 'pages/tarifs'
 
-  get 'pages/soins'
+  get 'pages/semelles'
+
+  get 'pages/podologie'
+
+  get 'pages/sport'
+
+  get 'pages/ortoplastie'
+
+  get 'pages/pedicurie'
+
+  get 'pages/rdv'
 
   get 'pages/home'
 
