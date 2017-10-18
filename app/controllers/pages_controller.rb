@@ -1,10 +1,25 @@
 class PagesController < ApplicationController
+  def semelles
+  end
+
+  def podologie
+  end
+
+  def sport
+  end
+
+  def orthoplasties
+  end
+
+  def pedicurie
+  end
+
   def rdv
   end
 
-  def soins
+  def home
   end
 
-  def home
+  def tarifs
   end
 end

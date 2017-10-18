@@ -2,17 +2,16 @@ _
 .home-background{
   background: $yellow;
       background-image: linear-gradient(-180deg, rgba(42,245,152,0.00) 0%, rgba(0,0,0,0.50) 100%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528883/background_ncdtm7.png);
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/background_ncdtm7.png);
 }
 
 .banner {
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528883/Banner_av41ss.jpg);
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/Banner_av41ss.jpg);
 }
-
 .rendezvous {
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528883/Banner_av41ss.jpg);
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/Banner_av41ss.jpg);
 }
 .general-wrapper {
   position: relative;
@@ -20,45 +19,45 @@ _
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover !important;
 }
 
 #podologie {
-  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 70%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528874/podologie_yb6vbu.jpg);
+  background-image:linear-gradient(-225deg, rgba(255,255,255, 0.6) 40%, rgba(0, 36, 61, 0.2) 50%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/podologie_yb6vbu.jpg);
 }
 
 #semelles {
-  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/a_180/v1506528860/semelles_pk37r5.jpg);
+  background-image:linear-gradient(-180deg, rgba(255,255,255, 0.7) 65%, rgba(0, 36, 61, 0.2) 110%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/semelles_pk37r5.jpg);
 }
 
 #sport {
-  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528862/sport_zrloat.jpg);
+  background-image:linear-gradient(-225deg, rgba(255,255,255, 0.6) 40%, rgba(0, 36, 61, 0.2) 100%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/sport_zrloat.jpg);
 }
 
-#ortoplastie {
-  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528875/pedicurie_tvpuo7.jpg);
+#orthodexie {
+  background-image:linear-gradient(-225deg, rgba(255,255,255, 0.6) 40%, rgba(0, 36, 61, 0.2) 50%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/pedicurie_tvpuo7.jpg);
 }
 
 #pedicurie {
-  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528881/Podiatry_vv1kft.jpg);
+  background-image:linear-gradient(-225deg, rgba(255,255,255, 0.6) 40%, rgba(0, 36, 61, 0.2) 50%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/Podiatry_vv1kft.jpg);
 }
 
 #adeline {
-  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528862/parcours_mcmitn.jpg);
+  background-image:linear-gradient(-225deg, rgba(255,255,255, 0.6) 40%, rgba(0, 36, 61, 0.2) 50%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/parcours_mcmitn.jpg);
 }
 
-#ou {
-  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528867/cabinet_pa2aao.jpg);
+#pathologies {
+  background-image:linear-gradient(-225deg, rgba(255,255,255, 0.6) 40%, rgba(0, 36, 61, 0.2) 50%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/cabinet_pa2aao.jpg);
 }
 
-#rdv {
-  background-image:linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528875/rdv_ba7qr9.jpg);
+#tarifs {
+  background-image:linear-gradient(-225deg, rgba(255,255,255, 0.6) 40%, rgba(0, 36, 61, 0.2) 80%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/rdv_ba7qr9.jpg);
 }

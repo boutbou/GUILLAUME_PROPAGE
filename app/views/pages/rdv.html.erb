@@ -1,88 +1,131 @@
-<div class="parcours rendezvous">
-  <div class="text-center">
-    <h3>Prise de rendez vous</h3>
+<%= render "shared/mobile-navbar"%>
+
+<div class="containe">
+
+  <div class="sidebar">
+    <%= render "shared/sidebar"%>
   </div>
-  <form>
-    <h3>Pour prendre rendez-vous merci de remplir le formulaire</h3>
 
-    <div class="contentform">
-      <div id="sendmessage"> Votre demande a bien été prise en compte, nous vous contacterons afin de confirmer la prise de rendez vous. Merci.</div>
+  <div class="container-flui home-background" >
 
+    <div class="general-wrapper rendezvous">
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-2 col-sm-8 ">
+          <div class="row">
+            <div class="general-content first-text">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="card-info parcours text-left style1">
+                    <h3>Demande de rendez vous en ligne</h3>
 
-      <div class="leftcontact">
-        <div class="form-group">
-          <p>Nom<span>*</span></p>
-          <span class="icon-case"><i class="fa fa-male"></i></span>
-          <input type="text" name="nom" id="nom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné."/>
-          <div class="validation"></div>
+                    <p>Afin de traiter convenable votre demande de rendez vous, cliquez sur le type de consultations pour laquelle vous voulez venir au cabinet: </p>
+                    <p>
+                      <a href=""><li>Bilan podologique - 1ere consultation pour des semelles othopédiques</li></a>
+                      <a href=""><li>Remise de semelles - 2eme consultation pour des semelles othopédiques</li></a>
+                      <a href=""><li>Visite de suivi - 3eme consultation pour des semelles othopédiques</li></a>
+                      <a href=""><li>Soin de pédicurie</li></a>
+                      <a href=""><li>Consultation podologique (orthodexie, autre)</li></a></p>
+                      <br>
+                      <p><b>Merci de remplir correctement le formulaire afin de traiter au mieux votre demande de rendez vous. Nous vous confirmerons le rendez vous par mail ou telephone rapidement apres votre demande recue.</b></p>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="card-info">
+                      <div class="parcours text-left style2">
+                        <h3>Important</h3>
+                        <b>En cas d’urgence veuillez téléphoner directement au 04 92 00 00 00.</b>
+                      </div>
+                      <div class="content-info">
+                        <p>
+                          Pour un bilan postural, un bilan podologique ou un suivi des semelles merci de :
+                          <ul>Venez avec les chaussures que vous mettez le plus souvent (sport, ville, securité, escarpin ) </ul>
+                          <ul>Venez avec les examens complementaires si vous en avez (Irm, Radiographie, Echographie, Bilan Sanguin )</ul>
+                          <ul>Venez avec vos anciennes semelle(s) orthopedique(s)</ul>
+                          <ul>Prevoyez une tenue adaptée, c'est comme pour l'osteopathie.</ul></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="card-info">
+                        <div class="title-info">
+                          <h3>Prendre rendez vous pour</h3>
+                        </div>
+                        <div class="text-center">
+                          <a class="btn-medium" href=""> Soin A </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="card-info">
+                        <div class="title-info">
+                          <h3>Prendre rendez vous pour</h3>
+                        </div>
+                        <div class="text-center">
+                          <a class="btn-medium" href=""> Soin B </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="card-info">
+                        <div class="title-info">
+                          <h3>Prendre rendez vous pour</h3>
+                        </div>
+                        <div class="text-center">
+                          <a class="btn-medium" href=""> Soin C </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="card-info">
+                        <div class="title-info">
+                          <h3>Jours et horaires d'ouverture</h3>
+                        </div>
+                        <div class="content-info">
+                          <p>Consultations au cabinet:</p>
+                          <li>Mardi de 8h30 à 20h</li>
+                          <li>Jeudi de 8h30 à 20h</li>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="card-info">
+                        <div class="title-info">
+                          <h3>Comment venir au cabinet ?</h3>
+                        </div>
+                        <div class="content-info">
+                          <p>Parking possible dans la résidence ou au parking de la gare</p>
+                          <p>Immeuble du grand clots en face le parking de la gare</p>
+                          <p>Entrée au fond de la cours à gauche de l'immeuble, Batiment A</p>
+                          <a href="https://goo.gl/maps/66NiWLUQap42"><i class="fa fa-road"></i> Itinéraire Google Maps</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="card-info">
+                        <div class="title-info">
+                          <h3>Plan et situation</h3>
+                        </div>
+                        <div class="content-info">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1025.9094134656727!2d5.944622707549037!3d44.190864529956016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cba6f45c3bbabd%3A0x4d351ca22347179f!2s24+Avenue+de+la+Lib%C3%A9ration%2C+04200+Sisteron%2C+France!5e1!3m2!1sfr!2sfr!4v1507285806042" width="350" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <%= render "shared/footer"%>
+            </div>
+          </div>
         </div>
 
-        <div class="form-group">
-          <p>Prénom <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-user"></i></span>
-          <input type="text" name="prenom" id="prenom" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
 
-        <div class="form-group">
-          <p>E-mail <span></span></p>
-          <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-          <input type="email" name="email" id="email"/>
-        </div>
-
-        <div class="form-group">
-          <p>Etes vous deja venu chez nous ? <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-question"></i></span>
-          <input type="text" name="ville" id="ville" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Ville' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
 
       </div>
 
-      <div class="rightcontact">
-
-        <div class="form-group">
-          <p>Numéro de téléphone <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-phone"></i></span>
-          <input type="text" name="phone" id="phone" data-rule="maxlen:10" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres"/>
-          <div class="validation"></div>
-        </div>
-
-        <div class="form-group">
-          <p>Type de rendez-vous Pedicurie/Bilan/remise de semelle<span>*</span></p>
-          <span class="icon-case"><i class="fa fa-random"></i></span>
-          <input type="text" name="fonction" id="fonction" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Fonction' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
-
-        <div class="form-group">
-          <p>Date souhaitée <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-calendar"></i></span>
-          <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
-
-        <div class="form-group">
-          <p>Horaire souhaité <span>*</span></p>
-          <span class="icon-case"><i class="fa fa-clock-o"></i></span>
-          <input type="text" name="sujet" id="sujet" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Sujet' doit être renseigné."/>
-          <div class="validation"></div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <p>Message <span>*</span></p>
-        <span class="icon-case"><i class="fa fa-comments-o"></i></span>
-        <textarea name="message" rows="14" data-rule="required" data-msg="Vérifiez votre saisie sur les champs : Le champ 'Message' doit être renseigné."></textarea>
-        <div class="validation"></div>
-      </div>
     </div>
 
-    <button type="submit" class="bouton-contact">Send</button>
-
-  </form>
-  <div class="btn-bas">
-              <a class="btn-medium" href=".."> Retour à l'accueil </a>
-            </div>
-
-</div>

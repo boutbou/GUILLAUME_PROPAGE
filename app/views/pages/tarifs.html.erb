@@ -1,0 +1,98 @@
+<%= render "shared/mobile-navbar"%>
+
+<div class="containe">
+
+  <div class="sidebar">
+    <%= render "shared/sidebar"%>
+  </div>
+
+  <div class="container-flui home-background" >
+
+    <div class="general-wrapper" id="tarifs">
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-2 col-sm-6 ">
+          <div class="row">
+            <div class="general-content">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                  <div class="first-text text-left style1">
+                    <h3>Les différents actes</h3>
+                    <p>
+                    <li><b>Soins de pédicurie</b> - 35 €</li>
+                      <li><b>Semelles orthopédique adulte</b> - 130 €
+                        <br> (Ce tarif comprend le bilan de podologie, la confection des semelles, la consultation de rendu et le suivi d'evolution sur 6 mois.)</li>
+                        <li><b>Semelles orthopédique enfant</b> - 110 €</li>
+                        <li><b>Orthoplasties</b> - 40 €
+                          <br> (Ce tarif comprend l'examen clinique, la confection de l'orthoplastie, la consultation de rendu et le suivi d'evolution sur 3 mois.)</li>
+                          <li><b>Consultation à domicile</b> - 40/43 €
+                            <br> (Déplacement possible sur les communes de Ribiers, Noyers, Chateauneuf, Sourribes et Valerne.)</li>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-4">
+                        <div class="first-image side-image">
+                          <%= cl_image_tag "default.jpg", :border=>"2px_solid_rgb:9DB4C0", width: 250, height: 150, crop: :fill %>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-8">
+                        <div class="text-left style1">
+                          <h3>Prise en charge assurance maladie : Régime général</h3>
+                          <p>
+                            Les actes de pédicurie médicale ne sont pas pris en charge par l'assurance maladie MAIS sont cependant remboursés par certaine Mutuelles (merci de vous renseigner préalablement auprès de ces dernières).<br>
+                          Les semelles orthopédiques sont prises en charge à environ 30% par l'assurance maladie, la différence étant intégralement voir partiellement remboursée par la mutuelle (merci de vous renseigner, également, au préalable auprès de ces dernières). </p>
+
+                          <h3>Prise en charge assurance maladie : Régime pour les patients diabétiques</h3>
+                          L'Assurance Maladie rembourse désormais les soins et actes de prévention des patients diabétiques de Grades 2 et 3 (gradation du groupe international de travail sur le pied diabétique)<br>
+                          <br>
+                          <b>Les lésions de Grade 2 :</b><br>
+                          <br>
+                          4 séances par an au maximum pour les patients présentant des lésions de grade 2.<br>
+                          <br>
+                          <b>Les lésions de Grade 3 :</b><br>
+                          <br>
+                          6 séances par an au maximum pour les patients présentant des lésions de grade 3.<br>
+                          <br>
+                          <b>Ces séances spécifiques doivent être prescrites par le médecin du patient diabétique sur ordonnances conformes.</b> Le pédicure-podolgue est tenu pour responsable en cas de gradation non justifiée, il a donc le devoir de refusé toute séance de soin injustifiée.
+                          <br>
+                          <br>
+
+                          Le tarif de chaque séance est de  27 Euros (Février 2009).<br>
+                          Elle est remboursée à 60% ou à 100% si vous êtes déjà pris en charge à 100 % par l'Assurance Maladie.<br></p>
+
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-4">
+                        <div class="first-image side-image">
+                          <%= cl_image_tag "cartevitale.jpg", :border=>"2px_solid_rgb:9DB4C0", width: 250, height: 150, crop: :fill %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="btn-bas">
+                    <a class="btn-medium" href="../pages/rdv"> Prendre rendez vous
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-2">
+                <%= render "shared/sideinfos"%>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12">
+                <%= render "shared/footer"%>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
