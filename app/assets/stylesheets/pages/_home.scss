@@ -193,9 +193,6 @@
 // desactivation sidebar on mobile
 
 @media (max-width: 992px) {
-  .sidebar {
-    display: none;
-  }
   .container-flui {
     width: 100vw;
   }
@@ -210,9 +207,6 @@
   }
 }
 @media (min-width: 993px) {
-  .mobile-navbar {
-    display: none;
-  }
   .first-image {
     margin-top: 55px;
   }

@@ -1,81 +1,37 @@
-  var  mn = $(".navbar.navbar-default");
-  var  mns = "navbar-fixed-top";
-  var  hdr = $('.banner').height();
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
 
-  $(window).scroll(function() {
-    if( $(this).scrollTop() > (hdr+0) ) {
-      mn.addClass(mns);
-    } else {
-      mn.removeClass(mns);
-    }
-  });
+// retiens puis lebère la navbar sur la home (scroll)
 
-  $('.navbar-toggle').click(function() {
-    $('.navbar-nav').toggleClass('is-tapped');
-    $('#hamburger').toggleClass('open');
-  });
+var  mn = $(".navbar-default");
+var  mns = "navbar-fixed-top";
+var  hdr = $('.banner').height();
 
-// // on document ready
-// $(document).ready(function() {
-
-//     // handle touch device events on drop down, first tap adds class, second navigates
-//     $('.touch .sitenavigation li.nav-dropdown > a').on('touchend',
-//         function(e) {
-//             if ($('.navbar-toggle').is(':hidden')) {
-//                 var parent = $(this).parent();
-//                 $(this).find('.clicked').removeClass('clicked');
-//                 if (parent.hasClass('clicked')) {
-//                     window.location.href = $(this).attr('href');
-//                 } else {
-//                     $(this).addClass('linkclicked');
-
-//                     // close other open menus at this level
-//                     $(this).parent().parent().find('.clicked').removeClass('clicked');
-
-//                     parent.addClass('clicked');
-//                     e.preventDefault();
-//                 }
-//             }
-//         });
-
-//     // handle the expansion of mobile menu drop down nesting
-//     $('.sitenavigation li.nav-dropdown').click(
-//         function(event) {
-//             if (event.stopPropagation) {
-//                 event.stopPropagation();
-//             } else {
-//                 event.cancelBubble = true;
-//             }
-
-//             if ($('.navbar-toggle').is(':visible')) {
-//                 $(this).find('> ul').toggle();
-//                 $(this).toggleClass('expanded');
-//             }
-//         }
-//     );
-
-//     // prevent links for propagating click/tap events that may trigger hiding/unhiding
-//     $('.sitenavigation a.nav-dropdown, .sitenavigation li.nav-dropdown a').click(
-//         function(event) {
-//             if (event.stopPropagation) {
-//                 event.stopPropagation();
-//             } else {
-//                 event.cancelBubble = true;
-//             }
-//         }
-//     );
-
-//     // javascript fade in and out of dropdown menu
-//     $('.no-touch .sitenavigation li').hover(
-//         function() {
-//             if (!$('.navbar-toggle').is(':visible')) {
-//                 $(this).find('> ul').fadeIn(100);
-//             }
-//         },
-//         function() {
-//             if (!$('.navbar-toggle').is(':visible')) {
-//                 $(this).find('> ul').fadeOut(100);
-//             }
-//         }
-//     );
-// });
+$(window).scroll(function() {
+  if( $(this).scrollTop() > (hdr+0) ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});
