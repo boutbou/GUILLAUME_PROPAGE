@@ -1,3 +1,23 @@
+@media (min-width: 992px) {
+
+  header{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: #f9f9f9;
+    border: thin solid #ededed;
+    height: 44px;
+  }
+  .navbar .logo {
+    padding: 11px;
+    font-size: 0.9375em;
+    font-weight: 800;
+    float: left;
+  }
+}
 #hamburger {
   width: 30px;
   position: relative;
@@ -99,7 +119,7 @@
   color: #000;
 }
 .sitenavigation li a:hover {
-  background-color: $yellow !important;
+  background-color: #CCC !important;
   color: #000;
 }
 .sitenavigation li.clicked > ul {
@@ -127,7 +147,7 @@
   margin-top: -40px;
 }
 .sitenavigation li ul ul a {
-  background-color: $light-gray;
+  background-color: lightgray;
 }
 .sitenavigation .nav-dropdown:hover > a, .sitenavigation .nav-dropdown.clicked > a {
   background-color: #ECECEC;
@@ -140,45 +160,28 @@
 .menu-icon {
   display: none;
 }
-.navbar {
-  .fa {
-    position: relative;
-    display: table-cell;
-    width: 60px;
-    height: 30px;
-    text-align: center;
-    vertical-align: middle;
-    font-size:20px;
-    @media(max-width: 575px) {
-      width: 40px;
-      font-size:14px;
-    }
-  }
-}
 
-@media (max-width: 993px) {
+@media (max-width: 991px) {
   .navbar {
-    width: 100vw;
-    background-color: $yellow;
+    width: 100%;
+    background-color: #f9f9f9;
     border: thin solid #ededed;
     height: 44px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     max-width: 100%;
-    z-index: 1030;
+    z-index: 1;
   }
   .navbar .logo {
     float: right;
-    font-weight: 400;
-    font-family: $name-font;
-    font-size:18px;
+    font-weight: 800;
     padding: 5px;
     margin: 10px;
   }
   .navbar .menu-icon {
-    width: 50px;
+    width: 30px;
     height: 25px;
     padding-top: 0;
     margin-top: 7px;
@@ -190,7 +193,6 @@
     margin-bottom: 10px;
     cursor: pointer;
   }
-
   .navbar .sitenavigation ul {
     display: none;
     max-width: none !important;
@@ -203,43 +205,42 @@
   }
   .navbar .sitenavigation.is-tapped > ul {
     display: block;
-    position: sticky !important;
+    position: absolute;
     margin: 0;
-    background-color: $blue;
+    background-color: #FFF;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 100;
     padding: 0;
   }
   .navbar .sitenavigation.is-tapped > ul a {
-    width: 100vw;
+    width: 100%;
     margin: 0;
-    background-color: $light-blue;
+    background-color: #ECECEC;
     display: block;
-    font-family: $headers-font;
     font-size: 1.1875em;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
     height: auto;
-    color: $dark-gray;
+    color: #758283;
     float: none;
     border: none !important;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
   }
   .navbar .sitenavigation.is-tapped > ul a:hover {
-    background-color: $light-gray
+    background-color: #dfdfdf;
   }
   .navbar .sitenavigation.is-tapped > ul li {
     width: 100%;
-    background-color: $blue;
+    background-color: #f7f7f7;
     border-bottom: solid 1px #b9b9b9;
     -webkit-tap-highlight-color: transparent;
   }
   .navbar .sitenavigation.is-tapped > ul li li {
-    background-color: $dark-gray;
+    background-color: #fff;
   }
   .navbar .sitenavigation.is-tapped > ul ul {
     display: none;
@@ -259,11 +260,11 @@
     border-bottom: solid 1px #f9f9f9;
   }
   .navbar .sitenavigation.is-tapped > ul ul li li a {
-    background-color: $oldlight-blue;
+    background-color: #f9f9f9;
     padding-left: 30px;
   }
   .navbar .sitenavigation.is-tapped > ul ul a {
-    background-color: $blue;
+    background-color: #dfdfdf;
     font-size: 1em;
     padding-left: 20px;
   }
