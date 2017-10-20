@@ -1,13 +1,17 @@
 // Navigation Variables
 $content-width: auto;
-$breakpoint: 800px;
 $nav-height: 70px;
 $nav-font-color: $dark-gray;
 $link-hover-color: $blue;
+$nav-background: $yellow;
+$nav-background-image: linear-gradient(225deg, rgba(0,101,168,0.3) 20%, rgba(0,36,61,0.1) 50%),
+url(https://res.cloudinary.com/dgbt9zicg/image/upload/e_blackwhite,o_29,z_0.1/v1508343102/backgroundNb_jjcplo.png);
 
 // Outer navigation wrapper
 .navigation {
   height: $nav-height;
+  background: $nav-background;
+  background-image: $nav-background-image;
 }
 
 // Logo and branding
@@ -18,6 +22,7 @@ $link-hover-color: $blue;
   float: left;
   line-height: $nav-height;
   font-size: 1.1em;
+  z-index: 1030;
   a,
   a:visited {
     color: $nav-font-color;
@@ -74,6 +79,8 @@ nav {
   display: none;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  background: $nav-background;
+  background-image: $nav-background-image;
 }
 
 /* Mobile navigation */
@@ -81,9 +88,8 @@ nav {
 // Binds to JS Toggle
 .nav-mobile {
   display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
+  left: calc(100vw - 70px);
   height: $nav-height;
   width: $nav-height;
 }
@@ -93,8 +99,9 @@ nav {
     display: block;
   }
   nav {
-   width: 100%;
-    padding: $nav-height 0 15px;
+    width: 100%;
+    background: $nav-background;
+    background-image: $nav-background-image;
     ul {
       display: none;
       li {
