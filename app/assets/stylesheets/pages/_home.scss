@@ -163,6 +163,12 @@
 
 
 // image side
+.pics {
+    img {
+    width: 12vw;
+  }
+}
+
 .side-image {
   display: flex;
   align-items: center;
@@ -205,6 +211,12 @@
   .text-left p {
     font-size: 10px;
   }
+
+  .pics {
+  img {
+    width: 75vw;
+  }
+}
 }
 @media (min-width: 993px) {
   .first-image {
