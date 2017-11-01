@@ -4,20 +4,22 @@
 
     <div class="banner" >
       <div class="banner-content">
-        <h1>Bienvenue au cabinet de <br>Pédicure - Podologie à Sisteron</h1>
+        <h1>Bienvenue au cabinet de <br>Pédicurie - Podologie à Sisteron</h1>
         <h2>Adeline Guillaume</h2>
-        <a class="btn-medium" href="#adeline">Continuer </a>
+        <a class="btn-medium" href="#adeline">Continuer</a>
       </div>
     </div>
+    <div id="adeline"></div>
     <%= render "shared/navbar"%>
-    <div class="underbanner" id="adeline">
+    <div class="underbanner" id="adeline2">
       <p><span>Je suis Adeline Guillaume,</span> Pédicure-Podologue diplômée d'Etat à l'Institut National de Podolgie. A l'obtention de mon diplôme de pédicure-podologie en 2011, j'ai décidé parcourir la France afin de me perfectionner aupres de plusieurs podologues expérimentés. </p>
+      <br>
       <p>Depuis 2017, j'exerce dans mon cabinet de Pédicure - Podologie ici à Sisteron</p>
     </div>
 
     <div class="general-wrapper" id="presentation">
       <div class="row">
-        <div class="col-xs-12 col-md-offset-2 col-md-6 ">
+        <div class="col-xs-12 col-md-offset-1 col-md-7 col-lg-offset-2 col-lg-6">
           <div class="row">
             <div class="general-content">
               <div class="row">
@@ -25,7 +27,7 @@
                   <div class="parcours text-left style1">
                     <h3>Mon Parcours, mes qualifications</h3>
                     <p>J'ai ainsi réalisé plusieurs remplacements de longue durée en Aquitaine, en Normandie, en Alsace et enfin dans les hautes alpes</p>
-                    <p>A la suite d'une colaboration de deux ans avec Mme Mignonat aux Mées, j'exerce dans mon cabinet de Pédicure - Podologie ici à Sisteron</p>
+                    <p>A la suite d'une colaboration de deux ans aux Mées, j'exerce maintenant dans mon cabinet de ici à Sisteron</p>
 
 
                   </div>
@@ -39,17 +41,16 @@
               <div class="row">
                 <div class="col-xs-12">
                   <div class="text-left style1">
-                    <p>En créant mon cabinet j'ai voulu proposer un soin professionnel avec une pratique maitrisée et moderne de la podologie.
+                    <p>Je vous accueil dans mon cabinet à sisteron pour vous proposer un soin professionnel avec une pratique maitrisée et moderne de la podologie.
                       <br>
-                    Je suis ainsi spécilisée dans les domines suivants: </p>
+                    Je suis spécilisée dans les domines suivants: </p>
                     <li>Podologie</li>
                     <li>Conception sur mesure de semelles othopédiques</li>
                     <li>Conception d'orthoplasties</li>
                     <li>Etude posturale</li>
                     <li>Pédicurie médicale</li>
                     <li>Réflexologie plantaire</li>
-                    <li>Le traitement du pied diabétique (Diplome Univesitaire 2017)</li>
-                    <li>Diplome universitaire Podologie du Sport en cours d'étude (2017-2018)</li>
+                    <li>La prise en charge globale du pied diabétique (Diplome Univesitaire 2017)</li>
                   </div>
                 </div>
               </div>
@@ -69,68 +70,122 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner pics" role="listbox">
                           <div class="item active">
-                             <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383285/salle_examen_mlhh9p.jpg" alt="">
-                            <div class="carousel-caption"></div>
-                          </div>
-                          <div class="item">
-                            <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383866/bureau_rdlr1c.jpg" alt="">
-                            <div class="carousel-caption"></div>
-                          </div>
-                          <div class="item">
-                            <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383276/Salle_attente_abfadl.jpg" alt="">
-                            <div class="carousel-caption"></div>
-                          </div>
-                          <div class="item">
-                            <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383291/salle_examen2_u9icsf.jpg" alt="">
-                            <div class="carousel-caption"></div>
-                          </div>
+                           <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383285/salle_examen_mlhh9p.jpg" alt="">
+                           <div class="carousel-caption">La salle d'examen</div>
+                         </div>
+                         <div class="item">
+                          <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383866/bureau_rdlr1c.jpg" alt="">
+                          <div class="carousel-caption"></div>
                         </div>
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                          <span class="sr-only">Précédent</span>
-                        </a>
-                        <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                          <span class="sr-only">Suivant</span>
-                        </a>
+                        <div class="item">
+                          <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383276/Salle_attente_abfadl.jpg" alt="">
+                          <div class="carousel-caption">La salle d'attente</div>
+                        </div>
+                        <div class="item">
+                          <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383291/salle_examen2_u9icsf.jpg" alt="">
+                          <div class="carousel-caption"></div>
+                        </div>
                       </div>
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Précédent</span>
+                      </a>
+                      <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 ">
-                  <div class="parcours first-text text-right style1">
-                    <h3> Le cabinet de pédicure - podologie à Sisteron</h3>
-                    <p>Je vous accueil au sein de mon cabinet équipé de métériels performants et récents pour vous assurer les meilleurs soins et la confection de semelles adaptée à votre pathologie et vos besoins. </p>
+              </div>
+              <div class="col-xs-12 ">
+                <div class="parcours first-text text-right style1">
+                  <h3> Le cabinet de pédicurie - podologie à Sisteron</h3>
+                  <p>Je vous accueil au sein de mon cabinet équipé de matériels performants et récents pour vous assurer les meilleurs soins et la confection de semelles adaptée à votre pathologie et vos besoins. </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="side-image pics text-center">
+                  <p><img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383235/materiel3_xjbgsf.jpg" alt="">
+                  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="side-image pics">
+                  <div class='container-fluid'>
+                    <div id="my-carousel2" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#my-carousel" data-slide-to="1"></li>
+                        <li data-target="#my-carousel" data-slide-to="2"></li>
+                        <li data-target="#my-carousel" data-slide-to="3"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner pics" role="listbox">
+                        <div class="item active">
+                         <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383261/outils1_irzhgw.jpg" alt="">
+                         <div class="carousel-caption"></div>
+                       </div>
+                       <div class="item">
+                        <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383269/outils3_swqvhh.jpg" alt="">
+                        <div class="carousel-caption"></div>
+                      </div>
+                      <div class="item">
+                        <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383265/outils2_mqpc0n.jpg" alt="">
+                        <div class="carousel-caption"></div>
+                      </div>
+                      <div class="item">
+                        <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383223/materiel1_dn4siv.jpg" alt="">
+                        <div class="carousel-caption"></div>
+                      </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#my-carousel2" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Précédent</span>
+                    </a>
+                    <a class="right carousel-control" href="#my-carousel2" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Suivant</span>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xs-10">
-                  <div class="parcours text-center" >
-                    <h4>Je serais ravie de vous accueillir dans mon cabinet</h4>
-                  </div>
-
-                  <div class="parcours text-right">
-                    <h3>Adeline Guillaume</h3>
-                  </div>
-                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <div class="side-image pics text-center">
+                <p><img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509383229/materiel2_oepjmk.jpg" alt="">
+                </p>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="btn-bas">
-              <a class="btn-medium" href="../pages/rdv"> Prendre rendez vous
-              </a>
+            <div class="col-xs-10">
+              <div class="parcours text-center" >
+                <h4>Je serais ravie de vous accueillir dans mon cabinet</h4>
+              </div>
+
+              <div class="parcours text-right">
+                <h3>Adeline Guillaume</h3>
+              </div>
             </div>
           </div>
         </div>
-          <%= render "shared/sideinfos"%>
       </div>
-
-
+      <div class="row">
+        <div class="btn-bas">
+          <a class="btn-medium" href="../pages/rdv"> Prendre rendez vous
+          </a>
+        </div>
+      </div>
     </div>
+    <%= render "shared/sideinfos"%>
   </div>
+</div>
+</div>
 
 </div>
 
