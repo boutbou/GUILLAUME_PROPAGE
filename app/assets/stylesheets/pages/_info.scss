@@ -1,3 +1,12 @@
+iframe {
+  width: 90% ;
+}
+
+// @media only screen and (max-width: 962px) {
+//   iframe { width: 90vw;
+//   }
+// }
+
 .card-info {
   color: $dark-gray;
   padding: 10px;

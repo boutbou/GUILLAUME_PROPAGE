@@ -1,16 +1,15 @@
-<%= render "shared/mobile-navbar"%>
+<div class="navbar-fixed-top">
+<%= render "shared/navbar"%>
+</div>
+
 
 <div class="containe">
-
-  <div class="sidebar">
-    <%= render "shared/sidebar"%>
-  </div>
 
   <div class="container-flui home-background" >
 
     <div class="general-wrapper" id="pedicurie">
       <div class="row">
-        <div class="col-xs-12 col-md-offset-2 col-md-6 ">
+        <div class="col-xs-12 col-md-offset-1 col-md-7 col-lg-offset-2 col-lg-6">
           <div class="row">
             <div class="general-content">
               <div class="row">
@@ -24,31 +23,15 @@
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                  <div class="first-image side-image">
-                    <%= cl_image_tag "pexels-photo-356053_wxols2.jpg", :border=>"2px_solid_rgb:9DB4C0", width: 250, height: 150, crop: :fill %>
+                  <div class="first-image side-image pics">
+                    <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528881/Podiatry_vv1kft.jpg" alt="">
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-xs-12 col-sm-8">
-                  <div class="text-left style1">
-                    <p>Les soins de pédicurie pratiqués à Sisteron  dans le cabinet de Mme Guillaume peuvent concerner différentes zones du pied :
-                      <li>la coupe des ongles</li>
-                      <li>le désépaississement des ongles par fraisage</li>
-                      <li>l’ablation des cors et de durillons</li>
-                      <li>le traitement et la prévention des ongles incarnés</li>
-                      <li>l’exérèse de l’hyperkeratose : traitement de la corne, des cales et crevasses</li>
-                      <li>le traitement des mycoses</li>
-                      <li>l’hygiène des pieds</li>
-                    </p>
 
-                    <p>La sécurité des actes est une priorité du cabinet de votre pédicure à Sisteron  Mme Drouffe-Simon. Ainsi, tous les instruments utilisés dans les soins de pédicurie sont décontaminés avant chaque soin par un passage aux ultrasons, ensachés puis stérilisés grâce à un autoclave classe B.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
                 <div class="col-xs-12 col-sm-4">
-                  <div class="side-image">
+                  <div class="second-image side-image pics">
                     <div class='container-fluid'>
                       <div id="my-carousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -60,79 +43,75 @@
                         </ol>
 
                         <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner pics" role="listbox">
                           <div class="item active">
-                            <%= cl_image_tag("running-shoe-shoe-brooks-highly-functional-54334_mbqbaf", width: 250, height: 150, crop: :fill) %>
-                            <div class="carousel-caption"></div>
-                          </div>
-                          <div class="item">
-                            <%= cl_image_tag("shoes-leather-single-fashion_wi93xu", width: 250, height: 150, crop: :fill) %>
-                            <div class="carousel-caption"></div>
-                          </div>
-                          <div class="item">
-                            <%= cl_image_tag("pexels-photo-221207_hbuwx7", width: 250, height: 150, crop: :fill) %>
-                            <div class="carousel-caption"></div>
-                          </div>
-                          <div class="item">
-                            <%= cl_image_tag("women-s-shoes-red-pin-fashion-66856_zp9l67", width: 250, height: 150, crop: :fill) %>
-                            <div class="carousel-caption"></div>
-                          </div>
+                           <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509465552/pedicurie-1_bqyeid.jpg" alt="">
+                           <div class="carousel-caption"></div>
+                         </div>
+                         <div class="item">
+                          <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509465548/pedicurie-3_ydltwe.jpg" alt="">
+                          <div class="carousel-caption"></div>
                         </div>
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                          <span class="sr-only">Précédent</span>
-                        </a>
-                        <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                          <span class="sr-only">Suivant</span>
-                        </a>
+                        <div class="item">
+                          <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1506528881/5631315_xxl_cwvsno.jpg" alt="">
+                          <div class="carousel-caption"></div>
+                        </div>
+                        <div class="item">
+                          <img src="https://res.cloudinary.com/dgbt9zicg/image/upload/v1509465549/pedicurie-2_lsk4p3.jpg" alt="">
+                          <div class="carousel-caption"></div>
+                        </div>
                       </div>
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Précédent</span>
+                      </a>
+                      <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-8">
-                  <div class="first-text text-right style1">
-
-                  </div>
-                </div>
               </div>
-              <div class="row">
-                <div class="col-xs-10">
-                  <div class=" text-center" >
+              <div class="col-xs-12 col-sm-8">
+                <div class="text-left style1">
+                  <p>Les soins de pédicurie pratiqués à Sisteron  dans le cabinet de Mme Guillaume peuvent concerner différentes zones du pied :
+                    <li>la coupe des ongles</li>
+                    <li>le désépaississement des ongles par fraisage</li>
+                    <li>l’ablation des cors et de durillons</li>
+                    <li>le traitement et la prévention des ongles incarnés</li>
+                    <li>l’exérèse de l’hyperkeratose : traitement de la corne, des cales et crevasses</li>
+                    <li>le traitement des mycoses</li>
+                    <li>l’hygiène des pieds</li>
+                  </p>
 
-                  </div>
-
-                  <div class="text-right">
-
-                  </div>
+                  <p>La sécurité des actes est une priorité du cabinet de votre pédicure à Sisteron  Mme Drouffe-Simon. Ainsi, tous les instruments utilisés dans les soins de pédicurie sont décontaminés avant chaque soin par un passage aux ultrasons, ensachés puis stérilisés grâce à un autoclave classe B.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="btn-bas">
-              <a class="btn-medium" href="../pages/rdv"> Prendre rendez vous
-              </a>
-            </div>
+        </div>
+        <div class="row">
+          <div class="btn-bas">
+            <a class="btn-medium" href="../pages/rdv"> Prendre rendez vous
+            </a>
           </div>
         </div>
-
-        <div class="col-xs-12 col-md-2">
-          <%= render "shared/sideinfos"%>
-        </div>
       </div>
-
-      <div class="row">
-        <div class="col-xs-12">
-          <%= render "shared/footer"%>
-        </div>
-      </div>
+      <%= render "shared/sideinfos"%>
     </div>
 
-
-
+    <div class="row">
+      <div class="col-xs-12">
+        <%= render "shared/footer"%>
+      </div>
+    </div>
   </div>
+
+
+
+</div>
 
 </div>
 

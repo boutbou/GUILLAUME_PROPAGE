@@ -1,17 +1,26 @@
-_
+
+
 .home-background{
   background: $yellow;
-      background-image: linear-gradient(-180deg, rgba(42,245,152,0.00) 0%, rgba(0,0,0,0.50) 100%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/background_ncdtm7.png);
+  background-image: linear-gradient(225deg, rgba(0, 101, 168, 0.3) 20%, rgba(0, 36, 61, 0.1) 50%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/e_blackwhite,o_29,z_0.1/v1508343102/backgroundNb_jjcplo.png);
 }
 
 .banner {
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
   url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/Banner_av41ss.jpg);
 }
+
+.footer-container {
+  background: $yellow;
+  background-image: linear-gradient(225deg, rgba(0, 101, 168, 0.3) 20%, rgba(0, 36, 61, 0.1) 50%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/e_blackwhite,o_29,z_0.1/v1508343102/backgroundNb_jjcplo.png);
+}
+
+
 .rendezvous {
-  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.2) 50%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/Banner_av41ss.jpg);
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.3) 50%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/cabinet_pa2aao.jpg);
 }
 .general-wrapper {
   position: relative;
@@ -47,7 +56,7 @@ _
   url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/Podiatry_vv1kft.jpg);
 }
 
-#adeline {
+#presentation {
   background-image:linear-gradient(-225deg, rgba(255,255,255, 0.6) 40%, rgba(0, 36, 61, 0.2) 50%),
   url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/parcours_mcmitn.jpg);
 }
@@ -58,6 +67,6 @@ _
 }
 
 #tarifs {
-  background-image:linear-gradient(-225deg, rgba(255,255,255, 0.6) 40%, rgba(0, 36, 61, 0.2) 80%),
-  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/rdv_ba7qr9.jpg);
+  background-image:linear-gradient(-225deg, rgba(255,255,255, 0.7) 40%, rgba(0, 36, 61, 0.4) 80%),
+  url(https://res.cloudinary.com/dgbt9zicg/image/upload/c_fit,h_3200,w_1800/sport_zrloat.jpg);
 }
