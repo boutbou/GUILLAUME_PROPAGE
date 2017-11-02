@@ -173,7 +173,9 @@
 .parcours h3 {
   font-family: $name-font
 }
-
+.first-image {
+  margin-top: 55px;
+}
 // responsive
 // desactivation sidebar on mobile
 
@@ -191,13 +193,13 @@
     font-size: 10px;
   }
   .pics {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 
 @media (min-width: 767px) {
-  .first-image {
-    margin-top: 55px;
+  .general-wrapper {
+    margin-top: 70px;
   }
   .second-image {
     margin-top: 125px;
