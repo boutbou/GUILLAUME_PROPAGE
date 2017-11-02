@@ -16,6 +16,7 @@ gem 'font-awesome-sass'
 gem 'simple_form', github: 'elsurudo/simple_form', branch: 'rails-5.1.0'
 gem 'autoprefixer-rails'
 gem 'cloudinary'
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'binding_of_caller'

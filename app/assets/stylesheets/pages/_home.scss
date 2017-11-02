@@ -10,8 +10,7 @@
   padding-left: 0px;
   padding-right: 0px;
 }
-.home-background {
-}
+
 
 .style1 {
   // border-radius: 5px;
@@ -117,9 +116,6 @@
   }
 }
 // special homepage
-.general-wrapper#adeline {
-  height: unset;
-}
 
 // general content
 .general-content {
@@ -200,6 +196,9 @@
 @media (min-width: 767px) {
   .general-wrapper {
     margin-top: 70px;
+  }
+  .general-wrapper#presentation {
+    margin-top: 0px;
   }
   .second-image {
     margin-top: 125px;
