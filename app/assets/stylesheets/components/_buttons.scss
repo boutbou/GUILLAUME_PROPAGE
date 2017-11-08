@@ -1,18 +1,18 @@
 .btn-medium {
-  color: $light-blue;
-  border: 1px solid $light-gray;
+  color: $dark-gray;
+  border: 1px solid $dark-gray;
   padding: 7px 20px;
   border-radius: 6px;
   font-family: $body-font;
   font-size: 25px;
-  background-color: rgba(157, 180, 192,0.5);
+  background-color: rgba(157, 180, 192,0.4);
   @media(max-width: 575px) {
     font-size:12px;
   }
 }
 
 .general-wrapper .btn-medium {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .btn-medium:hover {
